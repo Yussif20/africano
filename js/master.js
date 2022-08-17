@@ -3,7 +3,17 @@ document.querySelector(`.toggle-settings .fa-gear`).onclick = function () {
   this.classList.toggle(`fa-spin`);
   document.querySelector(`.settings-box`).classList.toggle(`open`);
 };
+// change the root color
+const colorsLi = document.querySelectorAll(`.colors-list li`);
 
+colorsLi.forEach((li) => {
+  li.addEventListener(`click`, (e) => {
+    document.documentElement.style.setProperty(
+      `--main-color`,
+      e.target.dataset.color
+    );
+  });
+});
 // slecting landing page
 let landingPage = document.querySelector(`.landing-page`);
 
