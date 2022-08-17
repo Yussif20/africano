@@ -9,7 +9,7 @@ body {
 /* landing page start  */
 .landing-page {
   min-height: 100vh;
-  background-image: url(../imgs/landing_1.jpg);
+  background-image: url(../imgs/01.jpg);
   background-size: cover;
   position: relative;
 }
