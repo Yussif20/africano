@@ -1,3 +1,9 @@
+// setting box toggle for spin and open classes
+document.querySelector(`.toggle-settings .fa-gear`).onclick = function () {
+  this.classList.toggle(`fa-spin`);
+  document.querySelector(`.settings-box`).classList.toggle(`open`);
+};
+
 // slecting landing page
 let landingPage = document.querySelector(`.landing-page`);
 

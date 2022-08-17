@@ -20,15 +20,17 @@ body {
 .settings-box.open {
   left: 0;
 }
-.settings-box .fa-gear {
+.settings-box .toggle-settings {
   position: absolute;
   right: -30px;
   top: 100px;
   background-color: #fff;
-  padding: 8px 0;
-  width: 30px;
   text-align: center;
   cursor: pointer;
+}
+.settings-box .fa-gear {
+  width: 30px;
+  padding: 8px 0;
 }
 /* settings box end */
 /* landing page start  */
