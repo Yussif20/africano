@@ -6,7 +6,31 @@ body {
   font-family: "DynaPuff", cursive;
   letter-spacing: 1px;
 }
-
+/* settings box start */
+.settings-box {
+  position: fixed;
+  left: -200px;
+  top: 0;
+  min-height: 100vh;
+  background-color: #fff;
+  width: 200px;
+  z-index: 1000;
+  transition: 0.3s;
+}
+.settings-box.open {
+  left: 0;
+}
+.settings-box .fa-gear {
+  position: absolute;
+  right: -30px;
+  top: 100px;
+  background-color: #fff;
+  padding: 8px 0;
+  width: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+/* settings box end */
 /* landing page start  */
 .landing-page {
   min-height: 100vh;
