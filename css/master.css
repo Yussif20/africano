@@ -72,7 +72,16 @@ body {
   transform: translate(-50%, -50%);
   color: #fff;
   z-index: 2;
+  text-align: center;
+}
+.introduction-text h1 {
+  font-size: 34px;
+  margin: 0 0 12px;
 }
 .introduction-text span {
   color: var(--main-color);
+}
+.introduction-text p {
+  line-height: 1.6;
+  font-size: 20px;
 }
