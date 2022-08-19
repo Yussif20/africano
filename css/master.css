@@ -9,6 +9,12 @@ body {
   font-family: "DynaPuff", cursive;
   letter-spacing: 1px;
 }
+.container {
+  width: 1170px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* settings box start */
 .settings-box {
   position: fixed;
