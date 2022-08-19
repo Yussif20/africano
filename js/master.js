@@ -2,10 +2,16 @@
 let mainColors = localStorage.getItem(`color_option`);
 
 if (mainColors !== null) {
-  document.documentElement.style.setProperty(
-    `--main-color`,
-    localStorage.getItem(`color_option`)
-  );
+  document.documentElement.style.setProperty(`--main-color`, mainColors);
+
+  //remove active class from colors list item
+  document.querySelectorAll(`.colors-list li`).forEach((element) => {
+    element.classList.remove(`active`);
+    //add active class on element with dataset === local storage
+    if (element.dataset.color === mainColors) {
+      element.classList.add(`active`);
+    }
+  });
 }
 
 // setting box toggle for spin and open classes
@@ -28,8 +34,8 @@ colorsLi.forEach((li) => {
     localStorage.setItem(`color_option`, e.target.dataset.color);
 
     //remove active class from colors and add it to the current color
-    e.target.parentElement.querySelectorAll(`.active`).forEach((Element) => {
-      Element.classList.remove(`active`);
+    e.target.parentElement.querySelectorAll(`.active`).forEach((element) => {
+      element.classList.remove(`active`);
     });
     e.target.classList.add(`active`);
   });

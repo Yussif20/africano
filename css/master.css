@@ -147,6 +147,7 @@ body {
   color: #fff;
   z-index: 2;
   text-align: center;
+  width: 80%;
 }
 .introduction-text h1 {
   font-size: 34px;
