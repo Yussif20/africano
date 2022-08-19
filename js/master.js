@@ -26,6 +26,12 @@ colorsLi.forEach((li) => {
 
     //set color on local storage
     localStorage.setItem(`color_option`, e.target.dataset.color);
+
+    //remove active class from colors
+    e.target.parentElement.querySelectorAll(`.active`).forEach((Element) => {
+      Element.classList.remove(`active`);
+    });
+    e.target.classList.add(`active`);
   });
 });
 // slecting landing page
