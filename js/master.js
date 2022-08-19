@@ -27,7 +27,7 @@ colorsLi.forEach((li) => {
     //set color on local storage
     localStorage.setItem(`color_option`, e.target.dataset.color);
 
-    //remove active class from colors
+    //remove active class from colors and add it to the current color
     e.target.parentElement.querySelectorAll(`.active`).forEach((Element) => {
       Element.classList.remove(`active`);
     });
