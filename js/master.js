@@ -1,3 +1,13 @@
+//check if there is local storage's color option
+let mainColors = localStorage.getItem(`color_option`);
+
+if (mainColors !== null) {
+  document.documentElement.style.setProperty(
+    `--main-color`,
+    localStorage.getItem(`color_option`)
+  );
+}
+
 // setting box toggle for spin and open classes
 document.querySelector(`.toggle-settings .fa-gear`).onclick = function () {
   this.classList.toggle(`fa-spin`);
@@ -8,10 +18,14 @@ const colorsLi = document.querySelectorAll(`.colors-list li`);
 
 colorsLi.forEach((li) => {
   li.addEventListener(`click`, (e) => {
+    //set color on root
     document.documentElement.style.setProperty(
       `--main-color`,
       e.target.dataset.color
     );
+
+    //set color on local storage
+    localStorage.setItem(`color_option`, e.target.dataset.color);
   });
 });
 // slecting landing page
