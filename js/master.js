@@ -88,8 +88,8 @@ const prevSilde = () => {
 
 const checker = () => {
   // set the slide number string
-  slideNumberElement.textContent =
-    `Slide #` + currnetSlide + ` of ` + slidesCount;
+  // slideNumberElement.textContent =
+  //   `Slide #` + currnetSlide + ` of ` + slidesCount;
 
   //remove all active classes
   removeAllActive();

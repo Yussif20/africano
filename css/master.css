@@ -37,7 +37,7 @@ body {
 .main-title {
   border: 2px solid black;
   padding: 10px 20px;
-  margin: 0 auto 80px;
+  margin: 80px auto 10px;
   width: fit-content;
   position: relative;
   font-size: 30px;
@@ -258,7 +258,7 @@ body {
 /* about us end  */
 /* zoo animals start */
 .zoo-animals {
-  padding-top: 74px;
+  padding-top: 52px;
   padding-bottom: 74px;
   background-color: #ece0d7;
 }
